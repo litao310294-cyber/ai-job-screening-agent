@@ -1,0 +1,239 @@
+{
+  "profileVersion": "eval-profile-v1",
+  "status": "FROZEN",
+  "artifactId": 9001,
+  "profileArtifactId": 9001,
+  "retrievalFacts": [
+    {
+      "factId": "F0001",
+      "factType": "PROJECT",
+      "normalizedText": "在 Java 后端项目中负责接口设计、业务编排和异常处理，使用 Java 完成核心服务实现。",
+      "source": {
+        "sourceId": "eval-resume-1",
+        "sourceTitle": "候选人项目经历（评测夹具）",
+        "sourceSection": "Java 后端项目",
+        "sourceText": "我在一个 Java 后端项目中负责接口设计、业务编排和异常处理，使用 Java 完成核心服务实现。"
+      }
+    },
+    {
+      "factId": "F0002",
+      "factType": "SKILL",
+      "normalizedText": "使用 Java 集合、泛型和自定义异常组织订单处理逻辑，并为边界输入补充单元测试。",
+      "source": {
+        "sourceId": "eval-resume-1",
+        "sourceTitle": "候选人项目经历（评测夹具）",
+        "sourceSection": "Java 基础实践",
+        "sourceText": "使用 Java 集合、泛型和自定义异常组织订单处理逻辑，并为边界输入补充单元测试。"
+      }
+    },
+    {
+      "factId": "F0003",
+      "factType": "PROJECT",
+      "normalizedText": "基于 Spring Boot 搭建模块化 REST 服务，拆分 Controller、Application Service 和 Repository 边界。",
+      "source": {
+        "sourceId": "eval-resume-1",
+        "sourceTitle": "候选人项目经历（评测夹具）",
+        "sourceSection": "服务端架构",
+        "sourceText": "基于 Spring Boot 搭建模块化 REST 服务，拆分 Controller、Application Service 和 Repository 边界。"
+      }
+    },
+    {
+      "factId": "F0004",
+      "factType": "SKILL",
+      "normalizedText": "通过 Spring Boot 配置文件管理数据源和外部服务参数，使用构造器注入组装服务依赖。",
+      "source": {
+        "sourceId": "eval-resume-1",
+        "sourceTitle": "候选人项目经历（评测夹具）",
+        "sourceSection": "Spring 配置",
+        "sourceText": "通过 Spring Boot 配置文件管理数据源和外部服务参数，使用构造器注入组装服务依赖。"
+      }
+    },
+    {
+      "factId": "F0005",
+      "factType": "PROJECT",
+      "normalizedText": "使用 MySQL 持久化用户、岗位和分析结果，设计关联表及唯一约束保障重复提交的一致性。",
+      "source": {
+        "sourceId": "eval-resume-1",
+        "sourceTitle": "候选人项目经历（评测夹具）",
+        "sourceSection": "数据持久化",
+        "sourceText": "使用 MySQL 持久化用户、岗位和分析结果，设计关联表及唯一约束保障重复提交的一致性。"
+      }
+    },
+    {
+      "factId": "F0006",
+      "factType": "SKILL",
+      "normalizedText": "针对按指纹查询的 MySQL 表增加组合索引，并用 EXPLAIN 检查查询计划和扫描范围。",
+      "source": {
+        "sourceId": "eval-resume-1",
+        "sourceTitle": "候选人项目经历（评测夹具）",
+        "sourceSection": "SQL 优化",
+        "sourceText": "针对按指纹查询的 MySQL 表增加组合索引，并用 EXPLAIN 检查查询计划和扫描范围。"
+      }
+    },
+    {
+      "factId": "F0007",
+      "factType": "PROJECT",
+      "normalizedText": "在岗位分析链路中使用 Redis 做结果 Cache-Aside，缓存键绑定分析身份并在数据库命中后执行回填。",
+      "source": {
+        "sourceId": "eval-resume-1",
+        "sourceTitle": "候选人项目经历（评测夹具）",
+        "sourceSection": "缓存与一致性",
+        "sourceText": "在岗位分析链路中使用 Redis 做结果 Cache-Aside，缓存键绑定分析身份并在数据库命中后执行回填。"
+      }
+    },
+    {
+      "factId": "F0008",
+      "factType": "PROJECT",
+      "normalizedText": "在秒杀库存练习中使用 Redis Lua 保证扣减原子性，并结合 Redisson 控制同一用户的重复提交。",
+      "source": {
+        "sourceId": "eval-resume-1",
+        "sourceTitle": "候选人项目经历（评测夹具）",
+        "sourceSection": "高并发实践",
+        "sourceText": "在秒杀库存练习中使用 Redis Lua 保证扣减原子性，并结合 Redisson 控制同一用户的重复提交。"
+      }
+    },
+    {
+      "factId": "F0009",
+      "factType": "SKILL",
+      "normalizedText": "使用 ExecutorService 和 CountDownLatch 编排有依赖关系的并发任务，并统计任务完成状态。",
+      "source": {
+        "sourceId": "eval-resume-1",
+        "sourceTitle": "候选人项目经历（评测夹具）",
+        "sourceSection": "并发编程",
+        "sourceText": "使用 ExecutorService 和 CountDownLatch 编排有依赖关系的并发任务，并统计任务完成状态。"
+      }
+    },
+    {
+      "factId": "F0010",
+      "factType": "SKILL",
+      "normalizedText": "在 JVM 基础学习中记录堆、栈和元空间的职责，并通过 GC 日志观察对象回收行为。",
+      "source": {
+        "sourceId": "eval-resume-1",
+        "sourceTitle": "候选人技术总结（评测夹具）",
+        "sourceSection": "JVM 基础",
+        "sourceText": "记录堆、栈和元空间的职责，并通过 GC 日志观察对象回收行为。"
+      }
+    },
+    {
+      "factId": "F0011",
+      "factType": "PROJECT",
+      "normalizedText": "实现一个简化的 RAG 岗位分析流程：将候选人事实切成可追溯片段，按岗位需求召回证据。",
+      "source": {
+        "sourceId": "eval-resume-1",
+        "sourceTitle": "AI 岗位分析项目（评测夹具）",
+        "sourceSection": "RAG 检索",
+        "sourceText": "实现一个简化的 RAG 岗位分析流程：将候选人事实切成可追溯片段，按岗位需求召回证据。"
+      }
+    },
+    {
+      "factId": "F0012",
+      "factType": "SKILL",
+      "normalizedText": "调用 Embedding 模型生成事实向量，使用余弦相似度与关键词检索结果做 RRF 融合。",
+      "source": {
+        "sourceId": "eval-resume-1",
+        "sourceTitle": "AI 岗位分析项目（评测夹具）",
+        "sourceSection": "向量检索",
+        "sourceText": "调用 Embedding 模型生成事实向量，使用余弦相似度与关键词检索结果做 RRF 融合。"
+      }
+    },
+    {
+      "factId": "F0013",
+      "factType": "PROJECT",
+      "normalizedText": "为岗位分析 Agent 设计工具调用边界，让工作流按需调用需求解析、画像检索和结果持久化工具。",
+      "source": {
+        "sourceId": "eval-resume-1",
+        "sourceTitle": "AI 岗位分析项目（评测夹具）",
+        "sourceSection": "Agent 工作流",
+        "sourceText": "为岗位分析 Agent 设计工具调用边界，让工作流按需调用需求解析、画像检索和结果持久化工具。"
+      }
+    },
+    {
+      "factId": "F0014",
+      "factType": "SKILL",
+      "normalizedText": "为模型输出定义 JSON 合同和 evidenceRefs，后端在进入持久化前执行解析、Schema、业务和引用校验。",
+      "source": {
+        "sourceId": "eval-resume-1",
+        "sourceTitle": "AI 岗位分析项目（评测夹具）",
+        "sourceSection": "结构化输出",
+        "sourceText": "为模型输出定义 JSON 合同和 evidenceRefs，后端在进入持久化前执行解析、Schema、业务和引用校验。"
+      }
+    },
+    {
+      "factId": "F0015",
+      "factType": "SKILL",
+      "normalizedText": "编写 Python 脚本清洗评测 JSONL、汇总检索命中情况，并导出可复现的实验记录。",
+      "source": {
+        "sourceId": "eval-resume-1",
+        "sourceTitle": "候选人技术总结（评测夹具）",
+        "sourceSection": "Python 工具",
+        "sourceText": "编写 Python 脚本清洗评测 JSONL、汇总检索命中情况，并导出可复现的实验记录。"
+      }
+    },
+    {
+      "factId": "F0016",
+      "factType": "SKILL",
+      "normalizedText": "在算法练习中实现哈希表、二叉树遍历和双指针题，并记录复杂度分析。",
+      "source": {
+        "sourceId": "eval-resume-1",
+        "sourceTitle": "候选人技术总结（评测夹具）",
+        "sourceSection": "算法练习",
+        "sourceText": "实现哈希表、二叉树遍历和双指针题，并记录复杂度分析。"
+      }
+    },
+    {
+      "factId": "F0017",
+      "factType": "PROJECT",
+      "normalizedText": "独立完成 AI Job Analyzer 后端闭环，从需求解析、候选人事实检索到结构化分析结果提交均保留版本信息。",
+      "source": {
+        "sourceId": "eval-resume-1",
+        "sourceTitle": "项目经历（评测夹具）",
+        "sourceSection": "项目概述",
+        "sourceText": "独立完成 AI Job Analyzer 后端闭环，从需求解析、候选人事实检索到结构化分析结果提交均保留版本信息。"
+      }
+    },
+    {
+      "factId": "F0018",
+      "factType": "PROJECT",
+      "normalizedText": "针对重复分析、缓存丢失和模型暂时失败设计幂等提交、数据库读回及有界恢复，并用集成测试验证。",
+      "source": {
+        "sourceId": "eval-resume-1",
+        "sourceTitle": "项目经历（评测夹具）",
+        "sourceSection": "工程化验证",
+        "sourceText": "针对重复分析、缓存丢失和模型暂时失败设计幂等提交、数据库读回及有界恢复，并用集成测试验证。"
+      }
+    }
+  ],
+  "structuredFacts": [
+    {
+      "factType": "INTERNSHIP_DURATION",
+      "normalizedValue": "可连续实习三个月以上",
+      "source": {
+        "sourceId": "eval-resume-1",
+        "sourceTitle": "候选人约束信息（评测夹具）",
+        "sourceSection": "实习安排",
+        "sourceText": "可连续实习三个月以上。"
+      }
+    },
+    {
+      "factType": "LOCATION",
+      "normalizedValue": "上海",
+      "source": {
+        "sourceId": "eval-resume-1",
+        "sourceTitle": "候选人约束信息（评测夹具）",
+        "sourceSection": "地点",
+        "sourceText": "期望在上海到岗实习。"
+      }
+    },
+    {
+      "factType": "EDUCATION",
+      "normalizedValue": "本科在读高年级",
+      "source": {
+        "sourceId": "eval-resume-1",
+        "sourceTitle": "候选人约束信息（评测夹具）",
+        "sourceSection": "教育背景",
+        "sourceText": "本科在读高年级。"
+      }
+    }
+  ],
+  "dataOrigin": "SYNTHETIC_TEST_FIXTURE"
+}

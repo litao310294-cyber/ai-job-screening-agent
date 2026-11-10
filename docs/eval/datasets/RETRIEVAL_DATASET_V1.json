@@ -1,0 +1,382 @@
+{
+  "datasetVersion": "retrieval-v1",
+  "profileVersion": "eval-profile-v1",
+  "status": "FROZEN",
+  "cases": [
+    {
+      "queryId": "Q01",
+      "evaluationLane": "RETRIEVAL",
+      "category": "Java",
+      "requirementType": "SKILL",
+      "queryStyle": "LEXICAL",
+      "requirementText": "熟悉 Java 后端开发",
+      "expectedRelevantFactIds": [
+        "F0001"
+      ],
+      "groundTruthLabel": "POSITIVE",
+      "groundTruthReason": "F0001 明确描述 Java 后端项目中的接口、编排和服务实现。"
+    },
+    {
+      "queryId": "Q02",
+      "evaluationLane": "RETRIEVAL",
+      "category": "Java",
+      "requirementType": "SKILL",
+      "queryStyle": "SEMANTIC_PARAPHRASE",
+      "requirementText": "能用 Java 处理集合数据并设计异常边界",
+      "expectedRelevantFactIds": [
+        "F0002"
+      ],
+      "groundTruthLabel": "POSITIVE",
+      "groundTruthReason": "F0002 明确包含 Java 集合、泛型、自定义异常及边界测试。"
+    },
+    {
+      "queryId": "Q03",
+      "evaluationLane": "RETRIEVAL",
+      "category": "Spring Boot",
+      "requirementType": "SKILL",
+      "queryStyle": "LEXICAL",
+      "requirementText": "有 Spring Boot 服务开发经验",
+      "expectedRelevantFactIds": [
+        "F0003"
+      ],
+      "groundTruthLabel": "POSITIVE",
+      "groundTruthReason": "F0003 明确描述基于 Spring Boot 的 REST 服务。"
+    },
+    {
+      "queryId": "Q04",
+      "evaluationLane": "RETRIEVAL",
+      "category": "Spring Boot",
+      "requirementType": "SKILL",
+      "queryStyle": "SEMANTIC_PARAPHRASE",
+      "requirementText": "了解 Spring 的配置管理和依赖装配",
+      "expectedRelevantFactIds": [
+        "F0004"
+      ],
+      "groundTruthLabel": "POSITIVE",
+      "groundTruthReason": "F0004 明确描述配置文件和构造器注入。"
+    },
+    {
+      "queryId": "Q05",
+      "evaluationLane": "RETRIEVAL",
+      "category": "MySQL",
+      "requirementType": "SKILL",
+      "queryStyle": "LEXICAL",
+      "requirementText": "具备 MySQL 持久化开发经验",
+      "expectedRelevantFactIds": [
+        "F0005"
+      ],
+      "groundTruthLabel": "POSITIVE",
+      "groundTruthReason": "F0005 明确描述 MySQL 持久化和唯一约束。"
+    },
+    {
+      "queryId": "Q06",
+      "evaluationLane": "RETRIEVAL",
+      "category": "MySQL",
+      "requirementType": "SKILL",
+      "queryStyle": "SEMANTIC_PARAPHRASE",
+      "requirementText": "做过关系型数据库查询性能优化",
+      "expectedRelevantFactIds": [
+        "F0006"
+      ],
+      "groundTruthLabel": "POSITIVE",
+      "groundTruthReason": "F0006 明确描述组合索引和 EXPLAIN 查询计划。"
+    },
+    {
+      "queryId": "Q07",
+      "evaluationLane": "RETRIEVAL",
+      "category": "Redis",
+      "requirementType": "SKILL",
+      "queryStyle": "LEXICAL",
+      "requirementText": "有 Redis 缓存实践",
+      "expectedRelevantFactIds": [
+        "F0007"
+      ],
+      "groundTruthLabel": "POSITIVE",
+      "groundTruthReason": "F0007 明确描述 Cache-Aside 缓存实践；F0008 留给 Q08 的高并发控制语义。"
+    },
+    {
+      "queryId": "Q08",
+      "evaluationLane": "RETRIEVAL",
+      "category": "Redis",
+      "requirementType": "SKILL",
+      "queryStyle": "SEMANTIC_PARAPHRASE",
+      "requirementText": "做过高并发库存或重复提交控制",
+      "expectedRelevantFactIds": [
+        "F0008"
+      ],
+      "groundTruthLabel": "POSITIVE",
+      "groundTruthReason": "F0008 明确覆盖库存原子扣减和同一用户重复提交控制。"
+    },
+    {
+      "queryId": "Q09",
+      "evaluationLane": "RETRIEVAL",
+      "category": "JUC",
+      "requirementType": "SKILL",
+      "queryStyle": "LEXICAL",
+      "requirementText": "掌握 Java 线程池和并发任务编排",
+      "expectedRelevantFactIds": [
+        "F0009"
+      ],
+      "groundTruthLabel": "POSITIVE",
+      "groundTruthReason": "F0009 明确包含 ExecutorService 和 CountDownLatch。"
+    },
+    {
+      "queryId": "Q10",
+      "evaluationLane": "RETRIEVAL",
+      "category": "JUC",
+      "requirementType": "SKILL",
+      "queryStyle": "SEMANTIC_PARAPHRASE",
+      "requirementText": "了解并发执行中的同步与任务完成协调",
+      "expectedRelevantFactIds": [
+        "F0009"
+      ],
+      "groundTruthLabel": "POSITIVE",
+      "groundTruthReason": "F0009 描述并发任务依赖编排和完成状态统计。"
+    },
+    {
+      "queryId": "Q11",
+      "evaluationLane": "RETRIEVAL",
+      "category": "JVM",
+      "requirementType": "SKILL",
+      "queryStyle": "LEXICAL",
+      "requirementText": "理解 JVM 堆栈、元空间和垃圾回收基础",
+      "expectedRelevantFactIds": [
+        "F0010"
+      ],
+      "groundTruthLabel": "POSITIVE",
+      "groundTruthReason": "F0010 明确覆盖堆、栈、元空间和 GC 观察。"
+    },
+    {
+      "queryId": "Q12",
+      "evaluationLane": "RETRIEVAL",
+      "category": "JVM",
+      "requirementType": "SKILL",
+      "queryStyle": "NEGATIVE",
+      "requirementText": "有 JVM 调优或线上故障排查经验",
+      "expectedRelevantFactIds": [],
+      "groundTruthLabel": "NO_RELEVANT_FACT",
+      "groundTruthReason": "EVAL_PROFILE_V1 仅包含 JVM 基础学习和 GC 观察，不包含调优或线上故障排查。"
+    },
+    {
+      "queryId": "Q13",
+      "evaluationLane": "RETRIEVAL",
+      "category": "MQ",
+      "requirementType": "SKILL",
+      "queryStyle": "NEGATIVE",
+      "requirementText": "有消息队列使用或异步消费经验",
+      "expectedRelevantFactIds": [],
+      "groundTruthLabel": "NO_RELEVANT_FACT",
+      "groundTruthReason": "EVAL_PROFILE_V1 没有消息队列或消费事实。"
+    },
+    {
+      "queryId": "Q14",
+      "evaluationLane": "RETRIEVAL",
+      "category": "MQ",
+      "requirementType": "SKILL",
+      "queryStyle": "NEGATIVE",
+      "requirementText": "了解消息可靠投递、重试和幂等",
+      "expectedRelevantFactIds": [],
+      "groundTruthLabel": "NO_RELEVANT_FACT",
+      "groundTruthReason": "EVAL_PROFILE_V1 没有消息投递、重试或幂等事实。"
+    },
+    {
+      "queryId": "Q15",
+      "evaluationLane": "RETRIEVAL",
+      "category": "微服务",
+      "requirementType": "SKILL",
+      "queryStyle": "NEGATIVE",
+      "requirementText": "了解微服务拆分与服务间调用",
+      "expectedRelevantFactIds": [],
+      "groundTruthLabel": "NO_RELEVANT_FACT",
+      "groundTruthReason": "EVAL_PROFILE_V1 没有微服务拆分或服务间调用事实。"
+    },
+    {
+      "queryId": "Q16",
+      "evaluationLane": "RETRIEVAL",
+      "category": "微服务",
+      "requirementType": "SKILL",
+      "queryStyle": "NEGATIVE",
+      "requirementText": "有服务治理、配置中心或注册发现经验",
+      "expectedRelevantFactIds": [],
+      "groundTruthLabel": "NO_RELEVANT_FACT",
+      "groundTruthReason": "EVAL_PROFILE_V1 没有服务治理、配置中心或注册发现事实。"
+    },
+    {
+      "queryId": "Q17",
+      "evaluationLane": "RETRIEVAL",
+      "category": "RAG",
+      "requirementType": "PROJECT_EXPERIENCE",
+      "queryStyle": "SEMANTIC_PARAPHRASE",
+      "requirementText": "做过面向岗位匹配的知识检索流程",
+      "expectedRelevantFactIds": [
+        "F0011"
+      ],
+      "groundTruthLabel": "POSITIVE",
+      "groundTruthReason": "F0011 明确描述 RAG 岗位分析、事实切片和证据召回。"
+    },
+    {
+      "queryId": "Q18",
+      "evaluationLane": "RETRIEVAL",
+      "category": "RAG",
+      "requirementType": "SKILL",
+      "queryStyle": "LEXICAL",
+      "requirementText": "了解 Embedding 向量和混合召回",
+      "expectedRelevantFactIds": [
+        "F0012"
+      ],
+      "groundTruthLabel": "POSITIVE",
+      "groundTruthReason": "F0012 明确描述 Embedding、余弦相似度、关键词检索和 RRF。"
+    },
+    {
+      "queryId": "Q19",
+      "evaluationLane": "RETRIEVAL",
+      "category": "Agent",
+      "requirementType": "PROJECT_EXPERIENCE",
+      "queryStyle": "LEXICAL",
+      "requirementText": "有 Agent 工具调用项目经验",
+      "expectedRelevantFactIds": [
+        "F0013"
+      ],
+      "groundTruthLabel": "POSITIVE",
+      "groundTruthReason": "F0013 明确描述岗位分析 Agent 和工具调用边界。"
+    },
+    {
+      "queryId": "Q20",
+      "evaluationLane": "RETRIEVAL",
+      "category": "Agent",
+      "requirementType": "SKILL",
+      "queryStyle": "SEMANTIC_PARAPHRASE",
+      "requirementText": "了解如何约束并校验模型结构化输出",
+      "expectedRelevantFactIds": [
+        "F0014"
+      ],
+      "groundTruthLabel": "POSITIVE",
+      "groundTruthReason": "F0014 明确覆盖 JSON 合同、Schema、业务和 evidenceRefs 校验。"
+    },
+    {
+      "queryId": "Q21",
+      "evaluationLane": "RETRIEVAL",
+      "category": "Python",
+      "requirementType": "SKILL",
+      "queryStyle": "LEXICAL",
+      "requirementText": "具备 Python 脚本开发能力",
+      "expectedRelevantFactIds": [
+        "F0015"
+      ],
+      "groundTruthLabel": "POSITIVE",
+      "groundTruthReason": "F0015 明确描述 Python 脚本。"
+    },
+    {
+      "queryId": "Q22",
+      "evaluationLane": "RETRIEVAL",
+      "category": "Python",
+      "requirementType": "PROJECT_EXPERIENCE",
+      "queryStyle": "SEMANTIC_PARAPHRASE",
+      "requirementText": "能用脚本处理评测数据并生成实验记录",
+      "expectedRelevantFactIds": [
+        "F0015"
+      ],
+      "groundTruthLabel": "POSITIVE",
+      "groundTruthReason": "F0015 明确描述 JSONL 清洗、指标汇总和实验记录导出。"
+    },
+    {
+      "queryId": "Q23",
+      "evaluationLane": "RETRIEVAL",
+      "category": "算法",
+      "requirementType": "SKILL",
+      "queryStyle": "LEXICAL",
+      "requirementText": "熟悉常见数据结构与算法题",
+      "expectedRelevantFactIds": [
+        "F0016"
+      ],
+      "groundTruthLabel": "POSITIVE",
+      "groundTruthReason": "F0016 明确列出哈希表、二叉树遍历和双指针。"
+    },
+    {
+      "queryId": "Q24",
+      "evaluationLane": "RETRIEVAL",
+      "category": "算法",
+      "requirementType": "SKILL",
+      "queryStyle": "SEMANTIC_PARAPHRASE",
+      "requirementText": "能够分析算法的时间和空间复杂度",
+      "expectedRelevantFactIds": [
+        "F0016"
+      ],
+      "groundTruthLabel": "POSITIVE",
+      "groundTruthReason": "F0016 明确记录算法复杂度分析；该条按 SKILL 处理。"
+    },
+    {
+      "queryId": "Q25",
+      "evaluationLane": "STRUCTURED",
+      "category": "实习时长",
+      "requirementType": "DURATION",
+      "queryStyle": "LEXICAL",
+      "requirementText": "能够连续实习三个月或以上",
+      "expectedRelevantFactIds": [],
+      "groundTruthLabel": "STRUCTURED",
+      "groundTruthReason": "由 EVAL_PROFILE_V1 的 INTERNSHIP_DURATION structuredFact 直接判断，不进入 Retrieval。"
+    },
+    {
+      "queryId": "Q26",
+      "evaluationLane": "STRUCTURED",
+      "category": "地点",
+      "requirementType": "LOCATION",
+      "queryStyle": "LEXICAL",
+      "requirementText": "能够在上海到岗实习",
+      "expectedRelevantFactIds": [],
+      "groundTruthLabel": "STRUCTURED",
+      "groundTruthReason": "由 EVAL_PROFILE_V1 的 LOCATION structuredFact 直接判断，不进入 Retrieval。"
+    },
+    {
+      "queryId": "Q27",
+      "evaluationLane": "STRUCTURED",
+      "category": "学历/年级",
+      "requirementType": "EDUCATION",
+      "queryStyle": "LEXICAL",
+      "requirementText": "本科及以上学历或在校高年级",
+      "expectedRelevantFactIds": [],
+      "groundTruthLabel": "STRUCTURED",
+      "groundTruthReason": "由 EVAL_PROFILE_V1 的 EDUCATION structuredFact 直接判断，不进入 Retrieval。"
+    },
+    {
+      "queryId": "Q28",
+      "evaluationLane": "RETRIEVAL",
+      "category": "项目经验",
+      "requirementType": "PROJECT_EXPERIENCE",
+      "queryStyle": "LEXICAL",
+      "requirementText": "有完整的后端项目交付经历",
+      "expectedRelevantFactIds": [
+        "F0017"
+      ],
+      "groundTruthLabel": "POSITIVE",
+      "groundTruthReason": "F0017 明确描述 AI Job Analyzer 后端闭环。"
+    },
+    {
+      "queryId": "Q29",
+      "evaluationLane": "RETRIEVAL",
+      "category": "项目经验",
+      "requirementType": "PROJECT_EXPERIENCE",
+      "queryStyle": "SEMANTIC_PARAPHRASE",
+      "requirementText": "能说明工程问题、实现方案和验证方式",
+      "expectedRelevantFactIds": [
+        "F0018"
+      ],
+      "groundTruthLabel": "POSITIVE",
+      "groundTruthReason": "F0018 明确描述问题、实现、恢复设计和集成测试验证。"
+    },
+    {
+      "queryId": "Q30",
+      "evaluationLane": "RETRIEVAL",
+      "category": "项目经验",
+      "requirementType": "PROJECT_EXPERIENCE",
+      "queryStyle": "SEMANTIC_PARAPHRASE",
+      "requirementText": "有端到端 AI 岗位分析后端项目经历",
+      "expectedRelevantFactIds": [
+        "F0017"
+      ],
+      "groundTruthLabel": "POSITIVE",
+      "groundTruthReason": "F0017 明确覆盖 AI Job Analyzer 从需求解析、候选人事实检索到结构化结果提交的后端闭环。"
+    }
+  ],
+  "dataOrigin": "SYNTHETIC_TEST_FIXTURE"
+}

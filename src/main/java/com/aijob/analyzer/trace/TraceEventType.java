@@ -1,0 +1,12 @@
+package com.aijob.analyzer.trace;
+
+public enum TraceEventType {
+    TRANSITION,
+    RETRY_SCHEDULED,
+    REPAIR_APPLIED,
+    FALLBACK_SELECTED,
+    READBACK_REQUIRED,
+    CANONICAL_REUSE,
+    SINGLEFLIGHT_LEADER,
+    SINGLEFLIGHT_FOLLOWER
+}

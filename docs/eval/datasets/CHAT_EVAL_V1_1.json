@@ -1,0 +1,192 @@
+{
+  "dataset": "chat-eval-v1.1",
+  "status": "FROZEN",
+  "parentDataset": "chat-eval-v1",
+  "supersedesReason": "Contract defect discovered before a valid formal run; cases and evidence inputs unchanged",
+  "promptVersion": "final-analysis-v1",
+  "schemaVersion": "job-analysis-v1",
+  "semanticSnapshot": {
+    "finalPromptVersion": "final-analysis-v1",
+    "finalSchemaVersion": "job-analysis-v1"
+  },
+  "cases": [
+    {
+      "caseId": "C01",
+      "inputFixtureRefs": [
+        "eval-profile-v1",
+        "R0001",
+        "F0001"
+      ],
+      "allowedEvidenceRefs": [
+        "F0001"
+      ],
+      "requiredContractInvariants": [
+        "SUPPORTED_requires_evidence"
+      ]
+    },
+    {
+      "caseId": "C02",
+      "inputFixtureRefs": [
+        "eval-profile-v1",
+        "R0001",
+        "F0001"
+      ],
+      "allowedEvidenceRefs": [
+        "F0001"
+      ],
+      "requiredContractInvariants": [
+        "partial_evidence_is_not_full_support"
+      ]
+    },
+    {
+      "caseId": "C03",
+      "inputFixtureRefs": [
+        "eval-profile-v1",
+        "R0001",
+        "R0002",
+        "F0001",
+        "F0002"
+      ],
+      "allowedEvidenceRefs": [
+        "F0001",
+        "F0002"
+      ],
+      "requiredContractInvariants": [
+        "all_requirement_ids_present"
+      ]
+    },
+    {
+      "caseId": "C04",
+      "inputFixtureRefs": [
+        "eval-profile-v1",
+        "R0001",
+        "R0002",
+        "F0001"
+      ],
+      "allowedEvidenceRefs": [
+        "F0001"
+      ],
+      "requiredContractInvariants": [
+        "absence_does_not_imply_unsupported",
+        "insufficient_evidence_may_use_empty_refs"
+      ]
+    },
+    {
+      "caseId": "C05",
+      "inputFixtureRefs": [
+        "eval-profile-v1",
+        "R0001"
+      ],
+      "allowedEvidenceRefs": [],
+      "requiredContractInvariants": [
+        "no_fabricated_refs",
+        "absence_does_not_imply_unsupported",
+        "insufficient_evidence_is_legal"
+      ]
+    },
+    {
+      "caseId": "C06",
+      "inputFixtureRefs": [
+        "eval-profile-v1",
+        "R0001"
+      ],
+      "allowedEvidenceRefs": [],
+      "requiredContractInvariants": [
+        "insufficient_evidence_is_legal"
+      ]
+    },
+    {
+      "caseId": "C07",
+      "inputFixtureRefs": [
+        "eval-profile-v1",
+        "R0001",
+        "F0001",
+        "F0002"
+      ],
+      "allowedEvidenceRefs": [
+        "F0001",
+        "F0002"
+      ],
+      "requiredContractInvariants": [
+        "refs_are_known_and_bound"
+      ]
+    },
+    {
+      "caseId": "C08",
+      "inputFixtureRefs": [
+        "eval-profile-v1",
+        "R0001",
+        "F0002"
+      ],
+      "allowedEvidenceRefs": [
+        "F0002"
+      ],
+      "requiredContractInvariants": [
+        "similarity_is_not_proof"
+      ]
+    },
+    {
+      "caseId": "C09",
+      "inputFixtureRefs": [
+        "eval-profile-v1",
+        "R0001",
+        "R0002",
+        "F0001"
+      ],
+      "allowedEvidenceRefs": [
+        "F0001"
+      ],
+      "requiredContractInvariants": [
+        "required_and_preferred_distinct"
+      ]
+    },
+    {
+      "caseId": "C10",
+      "inputFixtureRefs": [
+        "eval-profile-v1",
+        "R0001",
+        "R0002",
+        "R0003",
+        "F0001",
+        "F0002"
+      ],
+      "allowedEvidenceRefs": [
+        "F0001",
+        "F0002"
+      ],
+      "requiredContractInvariants": [
+        "every_requirement_assessed"
+      ]
+    },
+    {
+      "caseId": "C11",
+      "inputFixtureRefs": [
+        "eval-profile-v1",
+        "R0001",
+        "F0001"
+      ],
+      "allowedEvidenceRefs": [
+        "F0001"
+      ],
+      "requiredContractInvariants": [
+        "unsupported_claim_rejected"
+      ]
+    },
+    {
+      "caseId": "C12",
+      "inputFixtureRefs": [
+        "eval-profile-v1",
+        "structured:LOCATION",
+        "R0001",
+        "F0001"
+      ],
+      "allowedEvidenceRefs": [
+        "F0001"
+      ],
+      "requiredContractInvariants": [
+        "structured_context_separate_from_retrieval"
+      ]
+    }
+  ],
+  "dataOrigin": "SYNTHETIC_TEST_FIXTURE"
+}

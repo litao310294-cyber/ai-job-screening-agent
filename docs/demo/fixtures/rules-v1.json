@@ -1,0 +1,95 @@
+{
+  "fixtureVersion": "rules-2b-fixtures-v1",
+  "simulated": true,
+  "config": {
+    "candidate": {
+      "availableDaysPerWeek": 5,
+      "availableMonths": 6,
+      "availableFrom": "2026-11-10"
+    },
+    "criteria": {
+      "cities": [
+        "上海"
+      ],
+      "directions": [
+        "JAVA_BACKEND",
+        "AI_APPLICATION"
+      ],
+      "salaryMin": 150,
+      "salaryMax": 1000,
+      "salaryUnit": "DAY",
+      "excludedKeywords": [
+        "外包"
+      ]
+    },
+    "modes": {
+      "city": "HARD",
+      "direction": "HARD",
+      "attendance": "HARD",
+      "duration": "HARD",
+      "salary": "HARD",
+      "excludedKeywords": "HARD"
+    },
+    "softNotes": [
+      "模拟偏好，仅作演示回归"
+    ]
+  },
+  "cases": [
+    {
+      "jobId": "SIM-JAVA-A",
+      "hardReject": false,
+      "field": "attendance",
+      "expected": "SATISFIED"
+    },
+    {
+      "jobId": "SIM-AI-B",
+      "hardReject": false,
+      "field": "salary",
+      "expected": "UNKNOWN"
+    },
+    {
+      "jobId": "SIM-CITY-REJECT",
+      "hardReject": true,
+      "field": "city",
+      "expected": "UNSATISFIED"
+    },
+    {
+      "jobId": "SIM-DAYS-REJECT",
+      "hardReject": true,
+      "field": "attendance",
+      "expected": "UNSATISFIED"
+    },
+    {
+      "jobId": "SIM-MONTHS-REJECT",
+      "hardReject": true,
+      "field": "duration",
+      "expected": "UNSATISFIED"
+    },
+    {
+      "jobId": "SIM-MISSING",
+      "hardReject": false,
+      "field": "attendance",
+      "expected": "UNKNOWN"
+    },
+    {
+      "jobId": "SIM-NO-EVIDENCE",
+      "hardReject": false,
+      "field": "duration",
+      "expected": "UNKNOWN"
+    },
+    {
+      "jobId": "SIM-SALARY-NEGOTIABLE",
+      "hardReject": false,
+      "field": "salary",
+      "expected": "UNKNOWN"
+    },
+    {
+      "jobId": "SIM-COMPANY-EXCLUDE",
+      "hardReject": true,
+      "field": "excludedKeywords",
+      "expected": "UNSATISFIED"
+    }
+  ],
+  "versionScenario": "同一岗位规则 v1 到 v2 后必须计算，历史 v1 过期；显式旧版本提交返回409",
+  "concurrencyScenario": "运行时更新不改变已冻结规则；两个 expectedVersion 相同的保存仅一个成功"
+}

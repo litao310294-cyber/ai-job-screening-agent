@@ -1,0 +1,78 @@
+server:
+  address: 127.0.0.1
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 11MB
+  application:
+    name: ai-job-analyzer
+  datasource:
+    url: ${MYSQL_URL}
+    username: ${MYSQL_USERNAME}
+    password: ${MYSQL_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+      password: ${REDIS_PASSWORD:}
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    baseline-version: 0
+
+app:
+  llm:
+    chat:
+      base-url: ${AI_CHAT_BASE_URL:}
+      api-key: ${AI_CHAT_API_KEY:}
+  embedding:
+    base-url: ${AI_EMBEDDING_BASE_URL:}
+    api-key: ${AI_EMBEDDING_API_KEY:}
+    model: ${AI_EMBEDDING_MODEL:}
+  versions:
+    chat:
+      prompt: chat-v1
+      model: ${AI_CHAT_MODEL:}
+      schema: chat-reply-v1
+      temperature: 0
+      top-p: 1
+      max-output-tokens: 1200
+      response-format: json_object
+    rule: rule-v1
+    retrieval: retrieval-v1
+    resume-parser:
+      prompt: resume-parser-v1
+      model: ${AI_CHAT_MODEL:}
+      schema: candidate-profile-v1
+    requirement-parser:
+      prompt: requirement-parser-v2
+      model: ${AI_CHAT_MODEL:}
+      schema: requirement-set-v2
+      temperature: 0
+      top-p: 1
+      max-output-tokens: 2048
+      response-format: json_object
+    final-analysis:
+      prompt: final-analysis-v3
+      model: ${AI_CHAT_MODEL:}
+      schema: job-analysis-v2
+      temperature: 0
+      top-p: 1
+      max-output-tokens: 4096
+      response-format: json_object
+  retrieval:
+    query-builder-version: query-builder-v1
+    analyzer-id: lucene-standard
+    analyzer-version: lucene-10.5.1-standard-v1
+    keyword-candidate-limit: 20
+    vector-candidate-limit: 20
+    rrf-k: 60
+    final-evidence-top-k: 5
+    lucene-root: ${LUCENE_ROOT:./lucene-index}
+
+logging:
+  level:
+    com.aijob.analyzer: DEBUG

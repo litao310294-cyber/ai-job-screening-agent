@@ -1,0 +1,163 @@
+{
+  "fixtureVersion": "phase1-jd-v1",
+  "simulated": true,
+  "ruleReference": {
+    "acceptedCities": [
+      "上海"
+    ],
+    "availableDaysPerWeek": 5,
+    "availableMonths": 6,
+    "salaryHardConstraint": false
+  },
+  "cases": [
+    {
+      "caseId": "SIM-JAVA-A",
+      "expectedRule": "SATISFIED",
+      "job": {
+        "sourcePlatform": "SIMULATED",
+        "sourceJobId": "SIM-JAVA-A",
+        "title": "Java 后端实习 A",
+        "company": "模拟公司 A",
+        "city": "上海",
+        "salary": "200元/天",
+        "internshipDays": 4,
+        "duration": "3个月",
+        "description": "Java Spring Boot 后端开发。每周至少4天，至少实习3个月。",
+        "simulated": true,
+        "captureMethod": "FIXTURE",
+        "education": "本科",
+        "experience": "经验不限",
+        "location": "上海浦东",
+        "skills": [
+          "Java",
+          "Spring Boot"
+        ]
+      }
+    },
+    {
+      "caseId": "SIM-AI-B",
+      "expectedRule": "SATISFIED",
+      "job": {
+        "sourcePlatform": "SIMULATED",
+        "sourceJobId": "SIM-AI-B",
+        "title": "AI 应用开发实习 B",
+        "company": "模拟公司 B",
+        "city": "上海",
+        "salary": "6000元/月",
+        "internshipDays": 5,
+        "duration": "6个月",
+        "description": "Java 与 RAG、LLM 应用开发。每周5天，实习6个月。",
+        "simulated": true,
+        "captureMethod": "FIXTURE"
+      }
+    },
+    {
+      "caseId": "SIM-CITY-REJECT",
+      "expectedRule": "UNSATISFIED",
+      "job": {
+        "sourcePlatform": "SIMULATED",
+        "sourceJobId": "SIM-CITY-REJECT",
+        "title": "Java 城市约束样例",
+        "city": "北京",
+        "salary": "面议",
+        "description": "Java 后端实习，工作地点北京。",
+        "simulated": true,
+        "captureMethod": "FIXTURE"
+      }
+    },
+    {
+      "caseId": "SIM-DAYS-REJECT",
+      "expectedRule": "UNSATISFIED",
+      "job": {
+        "sourcePlatform": "SIMULATED",
+        "sourceJobId": "SIM-DAYS-REJECT",
+        "title": "Java 出勤约束样例",
+        "city": "上海",
+        "internshipDays": 6,
+        "description": "Java 后端实习，每周至少6天。",
+        "simulated": true,
+        "captureMethod": "FIXTURE"
+      }
+    },
+    {
+      "caseId": "SIM-MONTHS-REJECT",
+      "expectedRule": "UNSATISFIED",
+      "job": {
+        "sourcePlatform": "SIMULATED",
+        "sourceJobId": "SIM-MONTHS-REJECT",
+        "title": "Java 周期约束样例",
+        "city": "上海",
+        "duration": "12个月",
+        "description": "Java 后端实习，至少实习12个月。",
+        "simulated": true,
+        "captureMethod": "FIXTURE"
+      }
+    },
+    {
+      "caseId": "SIM-MISSING",
+      "expectedRule": "UNKNOWN",
+      "job": {
+        "sourcePlatform": "SIMULATED",
+        "sourceJobId": "SIM-MISSING",
+        "title": "Java 条件缺失样例",
+        "salary": "面议",
+        "description": "参与 Java 服务开发，具体安排待沟通。",
+        "simulated": true,
+        "captureMethod": "FIXTURE"
+      }
+    },
+    {
+      "caseId": "SIM-NO-EVIDENCE",
+      "expectedRule": "UNKNOWN",
+      "expectedEvidence": "根据画像实际检索，未命中时说明证据不足",
+      "job": {
+        "sourcePlatform": "SIMULATED",
+        "sourceJobId": "SIM-NO-EVIDENCE",
+        "title": "Java 与未证实能力样例",
+        "city": "上海",
+        "description": "Java 开发，同时要求生产级 COBOL 主机维护经验。",
+        "simulated": true,
+        "captureMethod": "FIXTURE"
+      }
+    },
+    {
+      "caseId": "SIM-SALARY-NEGOTIABLE",
+      "expectedRule": "SATISFIED",
+      "job": {
+        "sourcePlatform": "SIMULATED",
+        "sourceJobId": "SIM-SALARY-NEGOTIABLE",
+        "title": "Java 面议薪资样例",
+        "city": "上海",
+        "internshipDays": 4,
+        "duration": "3个月",
+        "salary": "面议",
+        "description": "Java 后端实习，每周4天，3个月，薪资面议。",
+        "simulated": true,
+        "captureMethod": "FIXTURE"
+      }
+    },
+    {
+      "caseId": "SIM-COMPANY-EXCLUDE",
+      "expectedRule": "UNSATISFIED",
+      "job": {
+        "company": "模拟外包公司",
+        "captureMethod": "FIXTURE",
+        "sourcePlatform": "SIMULATED",
+        "duration": "3个月",
+        "city": "上海",
+        "description": "Java 后端开发",
+        "simulated": true,
+        "title": "Java 后端实习",
+        "salary": "200元/天",
+        "sourceJobId": "SIM-COMPANY-EXCLUDE",
+        "internshipDays": 4
+      }
+    }
+  ],
+  "switchScenario": {
+    "from": "SIM-JAVA-A",
+    "to": "SIM-AI-B",
+    "lateResponseBelongsTo": "SIM-JAVA-A"
+  },
+  "note": "规则预期基于显式 ruleReference，阶段2实施。阶段1生产规则仍为 PLACEHOLDER_CONTINUE。岗位方向匹配和自然语言结果按实际画像及模型验证。"
+}

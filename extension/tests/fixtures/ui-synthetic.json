@@ -1,0 +1,233 @@
+{
+  "dataOrigin": "SYNTHETIC_TEST_FIXTURE",
+  "operation": {
+    "id": "analysis-synthetic",
+    "clientRequestId": "request-synthetic",
+    "jobSnapshotId": "snapshot-synthetic",
+    "status": "SUCCESS",
+    "stale": false,
+    "reuseSource": "COMPUTED",
+    "errorCode": null,
+    "dependencies": {
+      "profileArtifactIdentity": {
+        "profileVersion": 1
+      },
+      "ruleVersion": "synthetic-v1"
+    },
+    "execution": {
+      "resultOrigin": "LLM_ANALYSIS",
+      "result": {
+        "decision": "CONSIDER",
+        "overallAssessment": "这是明确标识的合成分析，用于验证中文界面。候选人有 Java 基础，其他条件需要确认。",
+        "requirementAssessments": [
+          {
+            "requirementId": "R0001",
+            "status": "SUPPORTED",
+            "reasoning": "合成证据包含 Java。",
+            "gap": "需要进一步确认项目深度。",
+            "evidenceRefs": [
+              "F0001"
+            ]
+          }
+        ],
+        "strengths": [
+          "合成材料有 Java 与 Spring Boot 记录。"
+        ],
+        "risks": [
+          "测试材料不代表真实求职判断。"
+        ],
+        "recommendation": "查看证据，并向助手提问。",
+        "summary": "合成测试结果"
+      }
+    },
+    "ruleResult": {
+      "items": [
+        {
+          "field": "city",
+          "strength": "DISABLED",
+          "verdict": "UNKNOWN",
+          "candidateValue": "null",
+          "jobValue": "null",
+          "unit": "LITERAL_TEXT",
+          "candidateSource": "合成规则",
+          "jobSource": "合成岗位",
+          "reason": "未启用"
+        },
+        {
+          "field": "direction",
+          "strength": "DISABLED",
+          "verdict": "UNKNOWN",
+          "candidateValue": "null",
+          "jobValue": "null",
+          "unit": "LITERAL_TEXT",
+          "candidateSource": "合成规则",
+          "jobSource": "合成岗位",
+          "reason": "未启用"
+        },
+        {
+          "field": "attendance",
+          "strength": "DISABLED",
+          "verdict": "UNKNOWN",
+          "candidateValue": "null",
+          "jobValue": "null",
+          "unit": "LITERAL_TEXT",
+          "candidateSource": "合成规则",
+          "jobSource": "合成岗位",
+          "reason": "未启用"
+        },
+        {
+          "field": "duration",
+          "strength": "DISABLED",
+          "verdict": "UNKNOWN",
+          "candidateValue": "null",
+          "jobValue": "null",
+          "unit": "LITERAL_TEXT",
+          "candidateSource": "合成规则",
+          "jobSource": "合成岗位",
+          "reason": "未启用"
+        },
+        {
+          "field": "salary",
+          "strength": "DISABLED",
+          "verdict": "UNKNOWN",
+          "candidateValue": "null",
+          "jobValue": "null",
+          "unit": "LITERAL_TEXT",
+          "candidateSource": "合成规则",
+          "jobSource": "合成岗位",
+          "reason": "未启用"
+        },
+        {
+          "field": "excludedKeywords",
+          "strength": "DISABLED",
+          "verdict": "UNKNOWN",
+          "candidateValue": "null",
+          "jobValue": "null",
+          "unit": "LITERAL_TEXT",
+          "candidateSource": "合成规则",
+          "jobSource": "合成岗位",
+          "reason": "未启用"
+        }
+      ]
+    }
+  },
+  "history": {
+    "generation": 0,
+    "turns": [
+      {
+        "id": "turn-synthetic-0",
+        "clientRequestId": "request-0",
+        "generation": 0,
+        "status": "SUCCEEDED",
+        "errorCode": null,
+        "question": {
+          "id": "q-0",
+          "content": "合成问题 0",
+          "jobSnapshotId": "snapshot-other",
+          "analysisId": "analysis-synthetic",
+          "sequence": 0
+        },
+        "reply": {
+          "content": "这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n",
+          "evidenceRefs": [
+            "analysis-synthetic/F0001"
+          ],
+          "replyToMessageId": "q-0"
+        }
+      },
+      {
+        "id": "turn-synthetic-1",
+        "clientRequestId": "request-1",
+        "generation": 0,
+        "status": "SUCCEEDED",
+        "errorCode": null,
+        "question": {
+          "id": "q-1",
+          "content": "合成问题 1",
+          "jobSnapshotId": "snapshot-synthetic",
+          "analysisId": "analysis-synthetic",
+          "sequence": 2
+        },
+        "reply": {
+          "content": "这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n",
+          "evidenceRefs": [
+            "analysis-synthetic/F0001"
+          ],
+          "replyToMessageId": "q-1"
+        }
+      },
+      {
+        "id": "turn-synthetic-2",
+        "clientRequestId": "request-2",
+        "generation": 0,
+        "status": "SUCCEEDED",
+        "errorCode": null,
+        "question": {
+          "id": "q-2",
+          "content": "合成问题 2",
+          "jobSnapshotId": "snapshot-synthetic",
+          "analysisId": "analysis-synthetic",
+          "sequence": 4
+        },
+        "reply": {
+          "content": "这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n",
+          "evidenceRefs": [
+            "analysis-synthetic/F0001"
+          ],
+          "replyToMessageId": "q-2"
+        }
+      },
+      {
+        "id": "turn-synthetic-3",
+        "clientRequestId": "request-3",
+        "generation": 0,
+        "status": "SUCCEEDED",
+        "errorCode": null,
+        "question": {
+          "id": "q-3",
+          "content": "合成问题 3",
+          "jobSnapshotId": "snapshot-synthetic",
+          "analysisId": "analysis-synthetic",
+          "sequence": 6
+        },
+        "reply": {
+          "content": "这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n这是**合成测试回复**，用于长文阅读。\n\n- 结合岗位解释 Java 经验。\n- 证据不足时需要确认。\n\n",
+          "evidenceRefs": [
+            "analysis-synthetic/F0001"
+          ],
+          "replyToMessageId": "q-3"
+        }
+      }
+    ],
+    "hasMore": false,
+    "nextAfterSequence": null
+  },
+  "facts": {
+    "facts": [
+      {
+        "factId": "F0001",
+        "factType": "SKILL",
+        "normalizedText": "合成测试候选人掌握 Java 和 Spring Boot。",
+        "source": {
+          "sourceId": "synthetic",
+          "sourceTitle": "合成测试材料",
+          "sourceSection": "技能",
+          "sourceText": "SYNTHETIC TEST ONLY: Java and Spring Boot."
+        }
+      }
+    ]
+  },
+  "job": {
+    "sourcePlatform": "TEST",
+    "sourceJobId": "SYNTHETIC-JOB",
+    "title": "合成 Java 后端岗位",
+    "company": "合成示例公司",
+    "city": "上海",
+    "location": "上海市示例区（合成）",
+    "salary": "200元/天",
+    "education": "本科",
+    "experience": "经验不限",
+    "description": "SYNTHETIC TEST ONLY: Java API development.",
+    "simulated": true
+  }
+}

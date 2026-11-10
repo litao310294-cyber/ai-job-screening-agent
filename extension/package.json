@@ -1,0 +1,28 @@
+{
+  "name": "ai-job-demo-extension",
+  "private": true,
+  "version": "0.5.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "build": "wxt build",
+    "prepare": "wxt prepare",
+    "typecheck": "vue-tsc --noEmit",
+    "test": "vitest run",
+    "browser:test": "node tests/browser.mjs"
+  },
+  "dependencies": {
+    "dompurify": "^3.4.17",
+    "marked": "^18.2.0",
+    "vue": "^3.5.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1.0",
+    "@wxt-dev/module-vue": "^1.0.0",
+    "playwright": "^1.56.0",
+    "typescript": "^5.9.0",
+    "vitest": "^5.1.0",
+    "vue-tsc": "^3.0.0",
+    "wxt": "^0.21.5"
+  }
+}
